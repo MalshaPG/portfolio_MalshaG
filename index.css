@@ -1,0 +1,37 @@
+h1 {
+    text-align: center;
+}
+
+main {
+    text-align: center;
+    padding: 0 4%;
+}
+
+nav {
+    text-align: right;
+    padding: 1%;
+    background-color: beige;
+}
+
+nav a {
+    margin-right: 1cm;
+}
+
+#meImg {
+    justify-content: center;
+}
+
+#me {
+    padding: 1%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}
