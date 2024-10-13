@@ -1,0 +1,16 @@
+.proImg {
+    width: 40%;
+    height: auto;
+}
+
+main {
+    display: grid;
+}
+
+article {
+    border: 0.01cm solid rgba(0, 0, 0, 0.295);
+    border-radius: 2%;
+    display: flexbox;
+    text-align: center;
+    justify-content: center;
+}
