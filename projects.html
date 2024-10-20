@@ -6,33 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects and Skills</title>
     <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="header_footer.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
 </head>
 
-<body>
+<body class="roboto-regular">
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+
+    </header>
+
     <main>
-        <article class="planeM">
-            <h4>Plane Management System</h4>
-            <img class="proImg" src="imgs\Gemini_Generated_Image_er0vdser0vdser0v.jpeg" alt="planeManagementSystem">
-            <p></p>
+        <div class="flexContainer">
+            <article class="flexItem">
+                <h4>Plane Management System</h4>
+                <img class="proImg" src="imgs\Gemini_Generated_Image_er0vdser0vdser0v.jpeg" alt="planeManagementSystem">
+                <p>In this project, I developed a ticket booking system using Java, which includes multiple
+                    functionalities
+                    to manage seat reservations and cancellations. The program provides a user menu with options for
+                    buying,
+                    canceling, and finding available seats. I implemented methods like buy_seat, cancel_seat, and
+                    find_first_available to ensure seamless seat management.The project also incorporates
+                    object-oriented concepts by introducing two classes: Person and Ticket. The Person class stores
+                    user information such as name, surname, and email, while the Ticket class tracks seat details,
+                    price,
+                    and is associated with a Person object. An array of Ticket objects stores all sold tickets for
+                    easy access and management.
+                </p>
+                <p>Additional features include displaying the seating plan, searching for ticket information,
+                    printing sold ticket details with total price calculations, and saving ticket information to text
+                    files.
+                    This project demonstrates my ability to apply control structures, work with classes and objects,
+                    and manage file I/O operations in Java.
+                </p>
+                <p><a href="#">Check the github repositary</a></p>
 
-        </article>
+            </article>
 
-        <article class="studentM">
-            <h4>Student Progression Predictor</h4>
-            <img class="proImg" src="imgs\Gemini_Generated_Image_2pncdi2pncdi2pnc.jpeg"
-                alt="studentProgressionEvaluvator">
-            <p>This Python-based program predicts academic progression outcomes for students based on credit inputs in
-                pass,
-                defer, and fail categories. It efficiently handles multiple inputs with validation to ensure accurate
-                credit totals and appropriate progression categories, such as Progress, Trailing, Module Retriever, and
-                Exclude.
-                The program also generates a visual histogram using the graphics.py module, allowing users to see
-                the distribution of outcomes. Additionally, it stores data in lists and text files for further analysis,
-                making it a robust and versatile tool for academic staff.</p>
-        </article>
+            <article class="flexItem">
+                <h4>Student Progression Predictor</h4>
+                <img class="proImg" src="imgs\Gemini_Generated_Image_2pncdi2pncdi2pnc.jpeg"
+                    alt="studentProgressionEvaluvator">
+                <p>This Python-based program predicts academic progression outcomes for students based on credit inputs
+                    in
+                    pass,
+                    defer, and fail categories. It efficiently handles multiple inputs with validation to ensure
+                    accurate
+                    credit totals and appropriate progression categories, such as Progress, Trailing, Module Retriever,
+                    and
+                    Exclude.
+                    The program also generates a visual histogram using the graphics.py module, allowing users to see
+                    the distribution of outcomes. Additionally, it stores data in lists and text files for further
+                    analysis,
+                    making it a robust and versatile tool for academic staff.</p>
+                <p><a href="#">Check the github repositary</a></p>
+            </article>
+        </div>
+
+        <aside class="roboto-medium">
+            <list>
+                <h4>Skills</h4>
+            </list>
+            <li>Python Programming Language</li>
+            <li>Java Programming Language</li>
+            <li>Web development</li>
+            <li>Problem Solving</li>
+            <li>Team Work</li>
+
+        </aside>
+
+        <div class="msg">
+            <a href="feedback.html"><img src="imgs\chat.png" alt="message"></a><br>
+            <!--"https://www.flaticon.com/free-icons/message"-->
+        </div>
     </main>
 
-
+    <footer>
+        <hr>
+        <p>&copy; 2024 Malsha Gamage. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>

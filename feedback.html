@@ -5,12 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback</title>
+
+    <link rel="stylesheet" href="header_footer.css">
+    <link rel="stylesheet" href="feedback.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
-    <form action="mailto:malshagamage137@gmail.com">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name">
+<body class="roboto-regular">
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+
+    </header>
+    <main>
+        <h3>Tell me your thoughts!</h3>
+        <form action="mailto:malshagamage137@gmail.com" method="post" enctype="text/plain">
+            <div class="formContent">
+                <img src="imgs\user.png" alt="user">
+                <div class="details">
+                    <label for="fname">First Name</label><br>
+                    <input type="text" name="name" id="fname" required><br>
+
+                    <label for=lname">Last Name</label><br>
+                    <input type="text" name="name" id="lname" required><br>
+
+                    <label for="email">Email</label><br>
+                    <input type="text" name="email" id="email"><br>
+
+                    <label for="message">Message</label><br>
+                    <textarea name="message" id="message" rows="8"></textarea><br>
+                </div>
+                <button id="submit">Submit</button>
+            </div>
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; 2024 Malsha Gamage. All rights reserved.</p>
+    </footer>
     </form>
 
 </body>
