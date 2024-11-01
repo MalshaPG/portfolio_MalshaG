@@ -4,6 +4,16 @@
 
 h1 {
     color: #00000079;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#mePara {
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(120, 127, 128);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(120, 127, 128);
 }
 
 

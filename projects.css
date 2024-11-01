@@ -1,3 +1,7 @@
+h4 {
+    text-decoration: underline;
+}
+
 .proImg {
     width: 40%;
     height: auto;
@@ -37,7 +41,6 @@ article p {
     /* Grow and shrink with a base width of 200px */
     text-align: center;
     border-radius: 5px;
-    /* Rounded corners */
 }
 
 .flexItem a {
@@ -55,28 +58,8 @@ article p {
     font-style: normal;
 }
 
-
-aside {
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgba(216, 214, 212, 0.5);
-}
-
-aside list h4 {
-    border: 1px solid rgb(34, 131, 211);
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 5px 10px 8px 10px #888888af;
-    background-color: rgb(34, 131, 211);
-}
-
-li {
-    margin-top: 10px;
-    padding: 2px;
-    display: flexbox;
-    border-radius: 5px;
-    background-color: cornflowerblue;
+a[target] {
+    background-color: yellow;
 }
 
 .msg a img {

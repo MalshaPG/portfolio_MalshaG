@@ -1,0 +1,56 @@
+/* Basic Page Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgb(121, 114, 106, 0.8);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Main content styles */
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #444;
+    border-bottom: 2px solid #e2e2e2;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e2e2e2;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px #d6d3d3af;
+}
+
+ul li:nth-child(odd) {
+    background: #d0d0d0;
+}
