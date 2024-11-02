@@ -52,16 +52,8 @@
         flex-wrap: wrap;
     }
 
-    h1 {
-        font-size: 1.5rem;
-    }
-
     main {
         padding: 0.8rem;
-    }
-
-    h2 {
-        font-size: 1.2rem;
     }
 }
 
@@ -86,6 +78,10 @@ nav a:hover {
     text-decoration: underline;
 }
 
+a[href] {
+    color: #555255;
+}
+
 /* Footer Styles */
 footer {
     text-align: center;
@@ -97,12 +93,12 @@ footer {
 
 /*home page css styles*/
 
-#homeh1 {
+.homeh1 {
     color: #00000079;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-#mePara {
+.mePara {
     margin: 20px;
     padding: 10px;
     background-color: rgb(120, 127, 128);
@@ -111,14 +107,16 @@ footer {
     box-shadow: 5px 5px 10px rgb(120, 127, 128);
 }
 
-
-#meImg {
-    display: flex;
-    /*vertically centering the image*/
-    justify-content: center;
+.mePara::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-#me {
+.meImg {
+    display: flex;
+}
+
+.me {
     padding: 0.5%;
     display: block;
     margin-left: auto;
@@ -129,16 +127,16 @@ footer {
 }
 
 
-#homeBody {
+.homeBody {
     text-align: center;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-#homeMain {
+.homeMain {
     flex: 1;
-    padding: 0px 100px 0 100px;
+    padding: 0 100px 0 100px;
 }
 
 .icons {
@@ -157,7 +155,7 @@ footer {
 /*CSS styles for about page*/
 
 /*basic styles*/
-#aboutBody {
+.aboutBody {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -166,28 +164,28 @@ footer {
     line-height: 1.6;
 }
 
-#aboutHeader {
-    background-color: rgb(121, 114, 106, 0.8);
+.aboutHeader {
+    /*add both rgb and rgba to support old browers*/
+    background-color: rgb(121, 114, 106);
+    background-color: rgba(121, 114, 106, 0.8);
     padding: 1rem 0;
     text-align: center;
 }
 
-#abouth1 {
+.abouth1 {
     margin: 0;
     font-size: 2.5rem;
 }
 
 /* Main content styles */
-#aboutMain {
+.aboutMain {
     padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
     background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
 }
 
-#abouth2 {
+.abouth2 {
     font-size: 1.8rem;
     text-transform: uppercase;
     color: #444;
@@ -209,7 +207,7 @@ footer {
     box-shadow: 5px 5px #d6d3d3af;
 }
 
-#aboutul li:nth-child(odd) {
+.aboutul li:nth-child(odd) {
     background: #d0d0d0;
 }
 
@@ -225,11 +223,8 @@ footer {
 }
 
 article {
-    padding: 10px;
+    border: 0.01cm solid rgb(0, 0, 0);
     border: 0.01cm solid rgba(0, 0, 0, 0.295);
-    border-radius: 2%;
-    display: flexbox;
-    text-align: center;
 }
 
 article p {
@@ -246,10 +241,14 @@ article p {
     padding: 20px;
     flex-wrap: wrap;
     /* Allow items to wrap */
+    border-radius: 2%;
+    text-align: justify;
 }
 
 .flexItem {
+    background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.904);
+    color: rgb(255, 255, 255);
     color: rgba(255, 255, 255, 0.753);
     padding: 20px;
     margin: 10px;
@@ -274,7 +273,11 @@ article p {
 }
 
 a[target] {
-    background-color: yellow;
+    color: #1277d6;
+}
+
+time[datetime] {
+    font-style: italic;
 }
 
 .msg a img {
@@ -285,14 +288,15 @@ a[target] {
 }
 
 /*CSS styles for feedback page*/
-#feedbackBody {
+.feedbackBody {
     text-align: center;
 }
 
 form {
+    border: 2px dotted rgb(0, 0, 0);
     border: 2px dotted rgba(0, 0, 0, 0.658);
-    background: rgba(255, 255, 255, 0.9);
-    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     max-width: 400px;
     margin: 2rem auto;
