@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects and Skills</title>
-    <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="stylesheet" href="styles.css">
 
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+    <!--Google Fonts: "Roboto" with multiple font weights-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -28,32 +30,46 @@
 
     </header>
 
+    <!-- main element specifies the main content of a document-->
     <main>
+        <!--div tag to add css to organize the content in a flexible layout -->
         <div class="flexContainer">
-            <article class="flexItem">
+            <!-- Two article tags for two projects -->
+            <article class="flexItem project1">
+                <!--Project name -->
                 <h4 class="projectsh4">Plane Management System</h4>
                 <img class="proImg" src="imgs/Gemini_Generated_Image_er0vdser0vdser0v.jpeg"
                     alt="planeManagementSystem"><br>
                 <time class="time" datetime="2024-02">February 2024</time> - <time datetime="2024-03">March 2024</time>
 
-                <p>In this project, I developed a ticket booking system using Java, which includes multiple
-                    functionalities
-                    to manage seat reservations and cancellations. The program provides a user menu with options for
-                    buying,
-                    canceling, and finding available seats. I implemented methods like buy_seat, cancel_seat, and
-                    find_first_available to ensure seamless seat management.The project also incorporates
-                    object-oriented concepts by introducing two classes: Person and Ticket. The Person class stores
-                    user information such as name, surname, and email, while the Ticket class tracks seat details,
-                    price,
-                    and is associated with a Person object. An array of Ticket objects stores all sold tickets for
-                    easy access and management.
-                </p>
-                <p>Additional features include displaying the seating plan, searching for ticket information,
-                    printing sold ticket details with total price calculations, and saving ticket information to text
-                    files.
-                    This project demonstrates my ability to apply control structures, work with classes and objects,
-                    and manage file I/O operations in Java.
-                </p>
+                <!-- div tag contains the information about the project -->
+                <div>
+                    <p>In this project, I developed a ticket booking system using Java, which includes
+                        multiple functionalities,</p>
+                    <ol>
+                        <li>Buy a seat</li>
+                        <li>Cancel a seat</li>
+                        <li>Find first available seat</li>
+                        <li>Show seating plan</li>
+                        <li>Print ticket information and total sales</li>
+                        <li>Search ticket</li>
+                    </ol>
+                    <p>The project also incorporates
+                        object-oriented concepts by introducing two classes: Person and Ticket. The Person class stores
+                        user information such as name, surname, and email, while the Ticket class tracks seat details,
+                        price,
+                        and is associated with a Person object. An array of Ticket objects stores all sold tickets for
+                        easy access and management.
+                    </p>
+                    <p>Additional features include displaying the seating plan, searching for ticket information,
+                        printing sold ticket details with total price calculations, and saving ticket information to
+                        text
+                        files.
+                        This project demonstrates my ability to apply control structures, work with classes and objects,
+                        and manage file I/O operations in Java.
+                    </p>
+                </div>
+                <!-- Link to navigate to the git repositary -->
                 <p><a href="#" target="_blank">Check the github repositary</a></p>
 
             </article>
@@ -65,22 +81,31 @@
                 <time class="time" datetime="2024-11">November 2024</time> - <time datetime="2024-12">December
                     2024</time>
 
-                <p>This Python-based program predicts academic progression outcomes for students based on credit inputs
-                    in
-                    pass,
-                    defer, and fail categories. It efficiently handles multiple inputs with validation to ensure
-                    accurate
-                    credit totals and appropriate progression categories, such as Progress, Trailing, Module Retriever,
-                    and
-                    Exclude.
-                    The program also generates a visual histogram using the graphics.py module, allowing users to see
-                    the distribution of outcomes. Additionally, it stores data in lists and text files for further
-                    analysis,
-                    making it a robust and versatile tool for academic staff.</p>
-                <p><a href="#" target="_blank">Check the github repositary</a></p>
+                <!-- div tag contains the information of the project -->
+                <div>
+                    <p>This Python-based program predicts academic progression outcomes for students based on credit
+                        inputs
+                        in pass,defer, and fail categories.
+                    </p>
+                    <p>It efficiently handles multiple inputs with validation to ensure accurate credit totals and
+                        appropriate progression categories, such as Progress, Trailing, Module Retriever,and Exclude.
+                    </p>
+                    <p>The program also generates a visual histogram using the <b>graphics.py</b> module, allowing users
+                        to
+                        see
+                        the distribution of outcomes. Additionally, it stores data in lists and text files for further
+                        analysis,
+                        making it a robust and versatile tool for academic staff.</p>
+                </div>
+
+                <!-- Link to navigate to the git repositary -->
+                <p>
+                    <a href="#" target="_blank">Check the github repositary</a>
+                </p>
             </article>
         </div>
 
+        <!-- navigate to feedback page -->
         <div class="msg">
             <a href="feedback.html"><img src="imgs/chat.png" alt="message"></a><br>
             <!--"https://www.flaticon.com/free-icons/message"-->

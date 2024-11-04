@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="mediaqueries.css">
 
+    <!--Google Fonts: "Roboto" with multiple font weights-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -29,9 +30,13 @@
 
     <main>
         <h3>Tell me your thoughts!</h3>
-        <form action="mailto:malshagamage137@gmail.com" method="post" enctype="text/plain">
+
+        <!-- feedback form -->
+        <form action="mailto:malsha.20232325@iit.ac.lk" method="post" enctype="text/plain">
             <div class="formContent">
                 <img src="imgs/user.png" alt="user">
+
+                <!-- Inside div tag form informations -->
                 <div class="details">
                     <label for="fname">First Name</label><br>
                     <input type="text" name="name" id="fname" required><br>
@@ -39,11 +44,18 @@
                     <label for="lname">Last Name</label><br>
                     <input type="text" name="name" id="lname" required><br>
 
-                    <label for="email">Email</label><br>
-                    <input type="text" name="email" id="email"><br>
+                    <label>Gender</label><br>
+                    <input type="radio" class="gender" checked="checked" value="male" name="gender"> Male
+                    <input type="radio" class="female" name="gender"> Female<br>
 
-                    <label for="message">Message</label><br>
+                    <div>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email"><br>
+                    </div>
+
+                    <label class="message" for="message">Message</label><br>
                     <textarea name="message" id="message" rows="8"></textarea><br>
+
                 </div>
                 <button id="submit">Submit</button>
             </div>
