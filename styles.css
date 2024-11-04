@@ -1,13 +1,14 @@
 /*common css styles*/
 
 
-/*specific fonts using google fonts*/
+/*Roboto font regular weight - google fonts*/
 .roboto-regular {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
+/*Style the navigation bar*/
 nav {
     text-align: center;
     padding: 10px;
@@ -18,6 +19,7 @@ nav a {
     margin-right: 25px;
 }
 
+/* hover effects on navigation links */
 nav a:hover {
     font-weight: bold;
 }
@@ -42,13 +44,14 @@ footer {
 /*home page css styles*/
 .homeBody {
     background-color: rgb(49, 51, 51);
-    background-color: rgba(49, 51, 51, 0.685);
+    background-color: rgba(49, 51, 51, 0.5);
     text-align: center;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+/* show the Specificity */
 h1 {
     color: #d31919;
 }
@@ -62,6 +65,11 @@ h1 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+.homeBody h2::first-letter {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
 .homeMain {
     flex: 1;
 }
@@ -72,10 +80,12 @@ h1 {
     transition: all 0.5s ease;
 }
 
+/* hover effects on image will make the image round */
 .meImg img:hover {
     border-radius: 50%;
 }
 
+/* Style the image wrapper */
 .me {
     padding: 0.5%;
     display: block;
@@ -90,15 +100,16 @@ h1 {
 .mePara {
     margin: 5%;
     padding: 2%;
+    /* add rgb values for old version of browers */
     background-color: rgb(15, 15, 15);
-    background-color: rgba(15, 15, 15, 0.795);
+    background-color: rgba(15, 15, 15, 0.5);
     color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgb(120, 127, 128);
 }
 
 .mePara::first-letter {
-    font-size: 1.5em;
+    font-size: 4em;
     font-weight: bold;
 }
 
@@ -117,6 +128,7 @@ h1 {
     }
 }
 
+/* apply animation to the laptop icon */
 .mePara .laptop {
     animation: move 6s infinite;
 }
@@ -133,6 +145,7 @@ h1 {
     float: right;
     z-index: 1000;
 }
+
 
 /*CSS styles for about page*/
 
@@ -160,11 +173,6 @@ header {
     text-align: center;
 }
 
-.abouth1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
 /* Main content styles */
 .aboutMain {
     padding: 2rem;
@@ -184,17 +192,18 @@ header {
 
 .aboutul {
     list-style: none;
-    padding: 0;
 }
 
 .aboutMain li {
     background-color: #cf1f1f;
 }
 
+/* Relational selectors */
 .aboutMain li+li {
     font-style: italic;
 }
 
+/* style li elements using child combinator */
 ul>li {
     text-align: left;
 }
@@ -211,6 +220,7 @@ ul>li {
     background: #d0d0d0;
 }
 
+/*Add gradient background for specific h2 element*/
 .aboutMain section h2:not(.abouth2) {
     background-image: linear-gradient(rgba(23, 23, 24, 0.801), rgb(205, 215, 219));
 }
@@ -297,12 +307,9 @@ a[target] {
     color: #1277d6;
 }
 
-time[datetime] {
+article>p>a {
     font-style: italic;
-}
-
-article>time {
-    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .time::before {
@@ -311,10 +318,14 @@ article>time {
     color: #ffffff;
 }
 
-article>p>a {
+time[datetime] {
     font-style: italic;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+article>time {
+    font-size: small;
+}
+
 
 .msg a img {
     width: 50px;
@@ -323,6 +334,7 @@ article>p>a {
     z-index: 1000;
 }
 
+/* hover effects for the msg icon */
 .msg a img:hover {
     transform: rotate(45deg);
 }
@@ -362,10 +374,12 @@ article>p>a {
     }
 }
 
+/* Apply bounce animation */
 .feedbackBody h3 {
     animation: bounce 3s infinite;
 }
 
+/* Style the form */
 form {
     border: 2px dotted rgb(0, 0, 0);
     border: 2px dotted rgba(0, 0, 0, 0.658);
@@ -421,6 +435,7 @@ div~label {
         'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* Style the submit button */
 button {
     border-color: #0a5091;
     border-style: solid;
@@ -430,6 +445,7 @@ button {
     transition: opacity 0.5s ease;
 }
 
+/* Add hover effect for the submit button */
 form button:hover {
     transform: scale(1.5);
     opacity: 0.8;
